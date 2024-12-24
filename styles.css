@@ -3,6 +3,15 @@
 
 body {
   font-family: 'Roboto', serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -11,6 +20,8 @@ h1 {
 }
 
 ul {
+  display: flex;
+  gap: 16px;
   list-style-type: none;
 }
 
@@ -32,9 +43,21 @@ button, .cta-block {
   background-color: #3882f6;
 }
 
+.main-block {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.placeholder-image {
+  width: 380px;
+  height: auto;
+}
+
 .header, .footer {
   color: #F9FAF8;
   background-color: #1F2937;
+  padding: 32px;
 }
 
 .info-header-text {
