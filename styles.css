@@ -6,13 +6,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* visual styles */
 
 h1 {
   font-size: 48px;
@@ -34,30 +31,45 @@ a, .secondary-text {
   color: #E5E7EB;
 }
 
+.header, .footer {
+  color: #F9FAF8;
+  background-color: #1F2937;
+}
+
 .header-logo {
   font-size: 24px;
   color: #F9FAF8;
 }
 
-button, .cta-block {
-  background-color: #3882f6;
+.hero-block {
+  width: 400px;
 }
 
-.main-block {
-  display: flex;
-  gap: 32px;
-  margin-top: 32px;
+button, .cta-button {
+  color: #F9FAF8;
+  font-weight: 600;
+  background-color: #3882f6;
+  padding: 6px 21px;
+  border-radius: 8px;
+  border: 1px solid #3882f6;
 }
+
+ .cta-button { 
+  border: 1px solid #F9FAF8;
+ }
+
+ .cta-block {
+   color: #F9FAF8;
+   background-color: #3882f6;
+   padding: 12px;
+   border-radius: 8px;
+   margin: 32px;
+ }
 
 .placeholder-image {
-  width: 380px;
-  height: auto;
-}
-
-.header, .footer {
-  color: #F9FAF8;
-  background-color: #1F2937;
-  padding: 32px;
+  width: 600px;
+  height: 200px;
+  margin: 0 72px;
 }
 
 .info-header-text {
@@ -66,7 +78,31 @@ button, .cta-block {
   font-weight: 900;
 }
 
+/* padding and margin */
+
+.block {
+  padding: 32px 48px;
+
+}
+
+
+/* section box styling */
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-block {
+  display: flex;
+  align-items: center;
+}
+
 .quote-block {
   color: #1F2937;
   background-color: #E5E7EB;
 }
+
+
