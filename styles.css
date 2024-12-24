@@ -4,3 +4,46 @@
 body {
   font-family: 'Roboto', serif;
 }
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, .secondary-text {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+button, .cta-block {
+  background-color: #3882f6;
+}
+
+.header, .footer {
+  color: #F9FAF8;
+  background-color: #1F2937;
+}
+
+.info-header-text {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+}
+
+.quote-block {
+  color: #1F2937;
+  background-color: #E5E7EB;
+}
