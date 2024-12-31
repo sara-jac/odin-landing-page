@@ -46,6 +46,7 @@ a, .secondary-text {
 }
 
 button, .cta-button {
+  font-size: 20px;
   color: #F9FAF8;
   font-weight: 600;
   background-color: #3882f6;
@@ -69,35 +70,52 @@ button, .cta-button {
 .placeholder-image {
   width: 600px;
   height: 200px;
-  margin: 0 72px;
 }
 
 .info-header-text {
+  text-align: center;
   font-size: 36px;
   color: #1F2937;
   font-weight: 900;
 }
 
+.image-card > img {
+  border: 3px solid #3882f6;
+  border-radius: 10%;
+  width: 120px;
+  height: 120px;
+}
 /* padding and margin */
 
 .block {
-  padding: 32px 48px;
-
+  padding: 20px 400px;
 }
 
 
 /* section box styling */
 
-
-.nav {
+.block {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
-.main-block {
+.card-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-text {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: row wrap;
+  width: 130px;
+  align-items: center;
+  text-align: center;
 }
 
 .quote-block {
