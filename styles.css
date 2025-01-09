@@ -9,8 +9,6 @@ body {
   padding: 0;
 }
 
-/* visual styles */
-
 h1 {
   font-size: 48px;
   font-weight: 900;
@@ -36,40 +34,56 @@ a, .secondary-text {
   background-color: #1F2937;
 }
 
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 400px;
+}
+
 .header-logo {
   font-size: 24px;
   color: #F9FAF8;
+  font-weight: 900;
 }
 
 .hero-block {
+  display: flex;
+  padding: 60px 0;
+}
+
+.hero-text {
   width: 400px;
 }
 
 button, .cta-button {
-  font-size: 20px;
+  font-size: 18px;
   color: #F9FAF8;
   font-weight: 600;
   background-color: #3882f6;
-  padding: 6px 21px;
+  padding: 8px 21px;
   border-radius: 8px;
   border: 1px solid #3882f6;
+  transition: 0.3s;
 }
 
- .cta-button { 
-  border: 1px solid #F9FAF8;
- }
-
- .cta-block {
-   color: #F9FAF8;
-   background-color: #3882f6;
-   padding: 12px;
-   border-radius: 8px;
-   margin: 32px;
- }
+button:hover {
+  cursor: pointer;
+  border: 1px solid #3882f6;
+  color: #3882f6;
+  background-color: #F9FAF8;
+}
 
 .placeholder-image {
-  width: 600px;
-  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 640px;
+  height: 250px;
+  background-color: #6D747D;
+  margin: 24px;
+  padding: 24px;
 }
 
 .info-header-text {
@@ -84,21 +98,6 @@ button, .cta-button {
   border-radius: 10%;
   width: 120px;
   height: 120px;
-}
-/* padding and margin */
-
-.block {
-  padding: 20px 400px;
-}
-
-
-/* section box styling */
-
-.block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .card-wrapper {
@@ -119,8 +118,41 @@ button, .cta-button {
 }
 
 .quote-block {
+  display: flex;
+  flex-direction: column;
+
   color: #1F2937;
   background-color: #E5E7EB;
 }
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.quote-author {
+  font-weight: 900;
+  align-self: flex-end;
+}
+
+ .cta-block {
+   color: #F9FAF8;
+   background-color: #3882f6;
+   padding: 12px;
+   border-radius: 8px;
+   margin: 32px;
+ }
+
+  .cta-button { 
+  border: 1px solid #F9FAF8;
+ }
+
+ .copyright {
+  text-align: center;
+  margin: 0 auto;
+  padding: 14px;
+ }
 
 
