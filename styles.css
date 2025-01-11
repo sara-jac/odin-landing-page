@@ -139,7 +139,6 @@ button:hover {
   padding: 12px;
 }
 
-
 /* quote Section */
 
 .quote-section {
@@ -187,6 +186,12 @@ button:hover {
   flex-direction: column;
   text-align: left;
   margin-bottom: 20px;
+}
+
+.cta-bold{
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 8px;
 }
 
 /* footer */
