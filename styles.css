@@ -1,67 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* general */
 
 body {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
+h1, .logo, .info-title, .quote-author {
+  font-weight: 900;
+}
+
 h1 {
   font-size: 48px;
-  font-weight: 900;
 }
 
 ul {
   display: flex;
   gap: 16px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a, .hero-subtext {
+  font-size: 18px;
+  color: #E5E7EB;
 }
 
 a {
   text-decoration: none;
 }
 
-a, .secondary-text {
-  font-size: 18px;
-  color: #E5E7EB;
+.logo {
+  font-size: 24px; 
+  color: #F9FAF8;
 }
 
-.header, .footer {
+/* containers */
+
+.header, .footer, .hero-section {
   color: #F9FAF8;
   background-color: #1F2937;
 }
 
-.block {
+.header-container, .hero-container, .cta-section {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 400px;
 }
 
-.header-logo {
-  font-size: 24px;
-  color: #F9FAF8;
-  font-weight: 900;
+
+/* hero section */
+
+.hero-section {
+  background-color: #1F2937; 
+  color: #F9FAF8; 
+  gap: 40px; 
 }
 
-.hero-block {
+.hero-content {
+  max-width: 400px;
+}
+
+.hero-image {
   display: flex;
-  padding: 60px 0;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 210px;
+  background-color: #6D747D;
+  padding: 24px;
 }
 
-.hero-text {
-  width: 400px;
-}
+/* buttons */
 
-button, .cta-button {
-  font-size: 18px;
+button {
   color: #F9FAF8;
-  font-weight: 600;
   background-color: #3882f6;
+  font-size: 18px;
+  font-weight: 600;
   padding: 8px 21px;
   border-radius: 8px;
   border: 1px solid #3882f6;
@@ -70,89 +92,107 @@ button, .cta-button {
 
 button:hover {
   cursor: pointer;
-  border: 1px solid #3882f6;
   color: #3882f6;
   background-color: #F9FAF8;
 }
 
-.placeholder-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 640px;
-  height: 250px;
-  background-color: #6D747D;
-  margin: 24px;
-  padding: 24px;
+.btn-cta {
+  border-color: #F9FAF8;
 }
 
-.info-header-text {
+/* info section */
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-title {
   text-align: center;
   font-size: 36px;
   color: #1F2937;
-  font-weight: 900;
+  padding: 24px;
 }
 
-.image-card > img {
-  border: 3px solid #3882f6;
-  border-radius: 10%;
-  width: 120px;
-  height: 120px;
-}
-
-.card-wrapper {
+.info-cards {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
 }
 
-.image-text {
-  font-size: 18px;
+.card img {
+  border: 4px solid #3882f6;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.card-text {
   display: flex;
   flex-wrap: row wrap;
-  width: 130px;
+  width: 180px;
+  text-align: center;
+  padding: 12px;
+}
+
+
+/* quote Section */
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  color: #1F2937;
+  justify-content: center;
   align-items: center;
+  background-color: #E5E7EB; 
+  padding: 60px; 
   text-align: center;
 }
 
-.quote-block {
-  display: flex;
-  flex-direction: column;
-
-  color: #1F2937;
-  background-color: #E5E7EB;
-}
-
-.quote-text {
-  font-size: 36px;
-  font-weight: 100;
+.quote {
+  font-size: 36px; 
   font-style: italic;
-  color: #1F2937;
+  font-weight: 100; 
+  margin: 0 auto 30px; 
+  line-height: 1.8; 
+  color: #374151; 
+  max-width: 800px; 
 }
 
 .quote-author {
-  font-weight: 900;
-  align-self: flex-end;
+  font-size: 18px; 
+  font-weight: 700; 
+  color: #111827; 
+  margin-top: 20px; 
 }
 
- .cta-block {
-   color: #F9FAF8;
-   background-color: #3882f6;
-   padding: 12px;
-   border-radius: 8px;
-   margin: 32px;
- }
+/* cta section */
 
-  .cta-button { 
-  border: 1px solid #F9FAF8;
- }
-
- .copyright {
+.cta-section {
+  color: #F9FAF8;
+  background-color: #3882f6;
+  padding: 28px 80px;
+  border-radius: 8px;
+  margin: 20px auto;
   text-align: center;
-  margin: 0 auto;
+  width: 900px;
+}
+
+.cta-message {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+.footer-text {
+  text-align: center;
+  margin: 0;
   padding: 14px;
- }
-
-
+}
